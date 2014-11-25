@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-
-
     function changeSize(){
         var heightDocument = $(window).height();
         var newHeight = heightDocument + 'px';

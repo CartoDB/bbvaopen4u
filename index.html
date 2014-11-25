@@ -7,42 +7,9 @@
         <title>BBVA Open4U - Mexico Visualizations</title>
         <link href="css/reset.css" type="text/css" rel="stylesheet">
         <link href="css/app.css" type="text/css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-        <script>
-            function loadIframe(iframeName, url) {
-                var $iframe = $('#' + iframeName);
-                if ( $iframe.length ) {
-                    $iframe.attr('src',url);   
-                    return false;
-                }
-                return true;
-            }
-            
-            function resetSelectBoxesExcept(id) {
-                var select_boxes = ['select_1', 'select_2', 'select_3', 'select_4', 'select_5', 'select_6', 'select_7'];
-                
-                for(var i=0;i<select_boxes.length;i++) {
-                    
-                    if (id != (i+1)) {
-                        document.getElementById('select_' + (i+1)).selectedIndex = 0;
-                        document.getElementById('div_select_' + (i+1)).style.width = '100px';
-                    }
-                }
-                
-                console.log('div_select_' + id);
-                
-                console.log(document.getElementById('select_' + id).selectedIndex);
-                
-                if (document.getElementById('select_' + id).selectedIndex == 0)
-                    document.getElementById('div_select_' + id).style.width = '100px';
-                else
-                    document.getElementById('div_select_' + id).style.width = '260px';
-            }
-
-        </script>
-
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css' />
+        <link href="css/slimmenu.min.css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet" media="screen">
     </head>
 
     <body>
@@ -105,87 +72,70 @@
                                 <span class="h-iblock h-malign">InnovaChallengeMX</span>
                             </h1>
                         </div>
+                        
+                        
                         <div class="h-right">
-                            <ul class="inb-list nav">
-                                
+                            <ul class="slimmenu">
                                 <li>
-                                    <div style="width: 100px" id="div_select_1" class="styled-select">
-                                        <select id="select_1" onchange="resetSelectBoxesExcept(1);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://team.cartodb.com/u/jorgearevalo/viz/b3719d8e-62ac-11e4-9790-0e018d66dc29/embed_map">1</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/efa1e7b8-7496-11e4-a50a-0e853d047bba/embed_map">Payments density - Monterrey</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/94cc00d8-7498-11e4-ba0d-0e018d66dc29/embed_map">Payments density - Guadalajara</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/de951376-7498-11e4-a919-0e4fddd5de28/embed_map">Payments density - Mexico DF</option>
-                                        </select>
-                                    </div>
-                                </li>                                
-                                
-                                <li>
-                                    <div style="width: 100px" id="div_select_2" class="styled-select">
-                                        <select id="select_2" onchange="resetSelectBoxesExcept(2);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://team.cartodb.com/u/jorgearevalo/viz/7ea965ec-74a3-11e4-a32a-0e9d821ea90d/embed_map">2</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/4033199c-749a-11e4-b947-0e018d66dc29/embed_map">Payments by zipcode - Monterrey</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/bd257882-749a-11e4-8b13-0e9d821ea90d/embed_map">Payments by zipcode - Guadalajara</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/10a364c8-6358-11e4-97b3-0e018d66dc29/embed_map">Payments by zipcode - Mexico DF</option>
-                                        </select>
-                                    </div>
+                                    <a href="#">Visualization 1</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/efa1e7b8-7496-11e4-a50a-0e853d047bba/embed_map')">Payments density - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/94cc00d8-7498-11e4-ba0d-0e018d66dc29/embed_map')">Payments density - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/de951376-7498-11e4-a919-0e4fddd5de28/embed_map')">Payments density - Mexico DF</a></li>
+                                    </ul>
                                 </li>
                                 
                                 <li>
-                                    <div style="width: 100px" id="div_select_3" class="styled-select">
-                                        <select id="select_3" onchange="resetSelectBoxesExcept(3);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://team.cartodb.com/u/jorgearevalo/viz/70d1f68c-6459-11e4-a907-0e018d66dc29/embed_map">3</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/70d1f68c-6459-11e4-a907-0e018d66dc29/embed_map">Payments elevation - Guadalajara</option>
-                                        </select>
-                                    </div>
+                                    <a href="#">Visualization 2</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/4033199c-749a-11e4-b947-0e018d66dc29/embed_map')">Payments by zipcode - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/bd257882-749a-11e4-8b13-0e9d821ea90d/embed_map')">Payments by zipcode - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/10a364c8-6358-11e4-97b3-0e018d66dc29/embed_map')">Payments by zipcode - Mexico DF</a></li>
+                                    </ul>
                                 </li>
-                                
                                 
                                 <li>
-                                    <div style="width: 100px" style="width: 100px" id="div_select_4" class="styled-select">
-                                        <select id="select_4" onchange="resetSelectBoxesExcept(4);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://cartodb.github.io/bbvaopen4u/viz4.html">4</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz4_1.html">Peak payments - Monterrey</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz4_2.html">Peak payments - Guadalajara</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz4_3.html">Peak payments - Mexico DF</option>
-                                        </select>
-                                    </div>
-                                </li>
-
-                               
-                                <li>
-                                    <div style="width: 100px" id="div_select_5" class="styled-select">
-                                        <select id="select_5" onchange="resetSelectBoxesExcept(5);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://team.cartodb.com/u/jorgearevalo/viz/64d9afd6-74a4-11e4-8396-0e853d047bba/embed_map">5</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/5d59099e-749c-11e4-9368-0e018d66dc29/embed_map">A day of payments - Monterrey</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/13101c24-749c-11e4-b947-0e018d66dc29/embed_map">A day of payments - Guadalajara</option>
-                                            <option value="https://team.cartodb.com/u/jorgearevalo/viz/46aa3794-6458-11e4-b6a2-0e853d047bba/embed_map">A day of payments - Mexico DF</option>
-                                        </select>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div style="width: 100px" id="div_select_6" class="styled-select">
-                                        <select id="select_6" onchange="resetSelectBoxesExcept(6);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://team.cartodb.com/u/jorgearevalo/viz/f0b87cc0-74a5-11e4-88b1-0e9d821ea90d/embed_map">6</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/bac5d856-74a0-11e4-98de-0e4fddd5de28/embed_map">Food payments - Monterrey</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/cd30f4a8-6cd5-11e4-882a-0e853d047bba/embed_map">Food payments - Guadalajara</option>
-                                            <option value="http://team.cartodb.com/u/jorgearevalo/viz/2b4cebe6-74a1-11e4-abb3-0e4fddd5de28/embed_map">Food payments - Mexico DF</option>
-                                        </select>
-                                    </div>
+                                    <a href="#">Visualization 3</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/70d1f68c-6459-11e4-a907-0e018d66dc29/embed_map')">Payments elevation - Guadalajara</a></li>
+                                    </ul>
                                 </li>
                                 
-                                
                                 <li>
-                                    <div style="width: 100px" id="div_select_7" class="styled-select">
-                                        <select id="select_7" onchange="resetSelectBoxesExcept(7);return loadIframe('ifrm', this.value)">
-                                            <option selected="selected" value="http://cartodb.github.io/bbvaopen4u/viz7.html">7</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz7_1.html">Food payments gender - Monterrey</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz7_2.html">Food payments gender - Guadalajara</option>
-                                            <option value="http://cartodb.github.io/bbvaopen4u/viz7_3.html">Food payments gender - Mexico DF</option>
-                                        </select>
-                                    </div>
+                                    <a href="#">Visualization 4</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz4_1.html')">Peak payments - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz4_2.html')">Payments density - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz4_3.html')">Payments density - Mexico DF</a></li>
+                                    </ul>
                                 </li>
                                 
+                                <li>
+                                    <a href="#">Visualization 5</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/5d59099e-749c-11e4-9368-0e018d66dc29/embed_map')">A day of payments - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/13101c24-749c-11e4-b947-0e018d66dc29/embed_map')">A day of payments - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/46aa3794-6458-11e4-b6a2-0e853d047bba/embed_map')">A day of payments - Mexico DF</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Visualization 6</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/bac5d856-74a0-11e4-98de-0e4fddd5de28/embed_map')">Food payments - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/cd30f4a8-6cd5-11e4-882a-0e853d047bba/embed_map')">Food payments - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://team.cartodb.com/u/jorgearevalo/viz/2b4cebe6-74a1-11e4-abb3-0e4fddd5de28/embed_map')">Food payments - Mexico DF</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <a href="#">Visualization 7</a>
+                                    <ul>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz7_1.html')">Payments density - Monterrey</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz7_2.html')">Payments density - Guadalajara</a></li>
+                                        <li><a href="#" onclick="return loadIframe('ifrm', 'http://cartodb.github.io/bbvaopen4u/viz7_3.html')">Payments density - Mexico DF</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>                        
                     </div>
@@ -196,8 +146,54 @@
 
             </section>
         </div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jquery.slimmenu.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
 
-
+        <script>
+            function loadIframe(iframeName, url) {
+                var $iframe = $('#' + iframeName);
+                if ( $iframe.length ) {
+                    $iframe.attr('src',url);   
+                    return false;
+                }
+                return true;
+            }
+            
+            function resetSelectBoxesExcept(id) {
+                var select_boxes = ['select_1', 'select_2', 'select_3', 'select_4', 'select_5', 'select_6', 'select_7'];
+                
+                for(var i=0;i<select_boxes.length;i++) {
+                    
+                    if (id != (i+1)) {
+                        document.getElementById('select_' + (i+1)).selectedIndex = 0;
+                        document.getElementById('div_select_' + (i+1)).style.width = '100px';
+                    }
+                }
+                
+                console.log('div_select_' + id);
+                
+                console.log(document.getElementById('select_' + id).selectedIndex);
+                
+                if (document.getElementById('select_' + id).selectedIndex == 0)
+                    document.getElementById('div_select_' + id).style.width = '100px';
+                else
+                    document.getElementById('div_select_' + id).style.width = '260px';
+            }
+            
+            
+            $('ul.slimmenu').slimmenu(
+            {
+                resizeWidth: '800',
+                collapserTitle: 'Main Menu',
+                easingEffect:'easeInOutQuint',
+                animSpeed:'medium',
+                indentChildren: true,
+                childrenIndenter: '&raquo;'
+            });
+        </script>
+         
         <script src="js/app.js"></script>
 
     </body>

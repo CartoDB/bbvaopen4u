@@ -1,29 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/favicons/favicon.ico?1411985985" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <title>bbva viz 4 1 | CartoDB</title>
-    <meta name="description" content="bbva viz 4 1">
-    <meta name="keywords" content="Map,cartodb,bbva,viz,4,1">
+    <link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/favicons/favicon.ico?1411985985" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <title>Peak consumption Monterrey | CartoDB</title>
+    <meta name="description" content="Peak consumption Monterrey">
+    <meta name="keywords" content="Map,cartodb,bbva,viz">
     <meta name="author" content="CartoDB">
-    <meta name="DC.title" content=" | CartoDB">
+    <meta name="DC.title" content="Peak consumption Monterrey | CartoDB">
     
-    <meta property="og:title" content="bbva viz 4 1 | CartoDB"/>
-    <meta property="og:description" content="bbva viz 4 1"/>
+    <meta property="og:title" content="Peak consumption Monterrey | CartoDB"/>
+    <meta property="og:description" content="Peak consumption Monterrey"/>
     <meta property="og:type" content="Visualization"/>
-    <meta property="og:url" content="/u/santiagoa/viz/3d0232e0-74a8-11e4-80f5-0e9d821ea90d/embed_map" />
-    <meta property="og:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/cartofante_blue.png"/>
+    <meta property="og:url" content="/u/demoscartodb/viz/a9d47198-8471-11e4-bd49-0e018d66dc29/embed_map" />
+    <meta property="og:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/cartofante_blue.png"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@cartodb">
     <meta name="twitter:creator" content="@cartodb">
-    <meta name="twitter:title" content="bbva viz 4 1 | CartoDB">
-    <meta name="twitter:description" content="bbva viz 4 1">
-    <meta name="twitter:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/cartofante_blue.png">
-    <meta name="twitter:url" content="/u/santiagoa/viz/3d0232e0-74a8-11e4-80f5-0e9d821ea90d/embed_map" />
+    <meta name="twitter:title" content="Peak consumption Monterrey | CartoDB">
+    <meta name="twitter:description" content="Peak consumption Monterrey">
+    <meta name="twitter:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/cartofante_blue.png">
+    <meta name="twitter:url" content="/u/demoscartodb/viz/a9d47198-8471-11e4-bd49-0e018d66dc29/embed_map" />
     
     
   <style type="text/css">
@@ -34,6 +33,14 @@
   .cartodb-text a.user { text-decoration:none }
   .cartodb-text img {display:inline-block; *display:inline; vertical-align:middle; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px; zoom:1; text-decoration:none }
   .cartodb-text span.username { text-decoration:underline }
+  /* likes */
+  .cartodb-text .like { float: right; display:inline-block; *display:inline; vertical-align:middle; zoom:1; text-decoration: none; color: #666; }
+  .cartodb-text .like .icon { display:inline-block; *display:inline; vertical-align:middle; zoom:1; position:relative; top: -1px; width: 14px; height: 14px; background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/heart.png'); background-size: 14px 14px; -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7);  }
+  .cartodb-text .like.is-highlighted .icon { background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/heart_highlighted.png'); background-size: 14px 14px; -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); }
+  .cartodb-text .like .icon.is-animated { -ms-animation-duration: 400ms; -webkit-animation-duration: 400ms; animation-duration: 400ms; -webkit-animation-fill-mode: both; -ms-animation-fill-mode: both; animation-fill-mode: both; animation-timing-function: ease-in; -webkit-animation-timing-function: ease-in; } 
+  @-webkit-keyframes pulse { 0% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } 25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(.5); -ms-transform: scale(.5); transform: scale(.5); } 75% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 100% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } }
+  @keyframes pulse { 0% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } 25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(.5); -ms-transform: scale(.5); transform: scale(.5); } 75% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 100% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } }
+  .cartodb-text .like .icon.is-pulsating { -webkit-animation-name: pulse; -ms-animation-name: pulse; animation-name: pulse; }
 
   /* not supported dialog */ 
   #not_supported_dialog {position:absolute; width:356px; height:213px; top:50%; left:50%; margin-top:-107px; margin-left:-178px; padding:0; background-color:#FFF; text-align:center; font-family:'Helvetica', Arial; color:#666666; z-index:10000;}
@@ -43,17 +50,17 @@
   #not_supported_dialog ul li {float:left; margin:0; padding:0; border-right:1px solid #D9D9D9;}
   #not_supported_dialog ul li a {display:block; width:118px; height:74px; background-repeat:no-repeat; background-position:center center; font-size:0; line-height:0; text-indent:-9999px;}
   #not_supported_dialog ul li.last {border:none;}
-  #not_supported_dialog a.safari {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/safari.png');}
-  #not_supported_dialog a.chrome {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/chrome.png');}
-  #not_supported_dialog a.firefox {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/firefox.png');}
+  #not_supported_dialog a.safari {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/safari.png');}
+  #not_supported_dialog a.chrome {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/chrome.png');}
+  #not_supported_dialog a.firefox {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/firefox.png');}
+      
+      div.cartodb-timeslider {display: none !important;}
 
 
   :-webkit-full-screen .cartodb-map-wrapper { height: 100%!important; }
   :-moz-full-screen .cartodb-map-wrapper { height: 100%!important; }
   :-ms-fullscreen .cartodb-map-wrapper { height: 100%!important; }
   :fullscreen .cartodb-map-wrapper { height: 100%!important; }
-      
-      div.cartodb-timeslider {display: none !important;}
 
     /* Styles showing up new cartodb text */
       .cartodb-map-wrapper {bottom:30px!important;}
@@ -61,12 +68,12 @@
 
 </style>
 
-<link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/stylesheets/cartodb.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/stylesheets/cartodb.css" media="screen" rel="stylesheet" type="text/css" />
 
 
 
     <!--[if lt IE 9]>
-      <script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/modernizr.js" type="text/javascript"></script>
+      <script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/modernizr.js" type="text/javascript"></script>
     <![endif]-->
   </head>
 
@@ -88,15 +95,22 @@
 
     <div class="cartodb-text">
       Map created by
-      <a class="user" href="https://team.cartodb.com/u/santiagoa?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=santiagoa" target="_blank">
-          <img src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/unversioned/images/avatars/avatar_heart_green.png" width="16" height="16" alt="Santiago Giraldo Anduaga" title="Santiago Giraldo Anduaga" />
-        <span class="username">Santiago Giraldo Anduaga</span>
+      <a class="user" href="https://bbvaopen4u.cartodb.com/u/demoscartodb?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=demoscartodb" target="_blank">
+          <img src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/unversioned/images/avatars/avatar_star_red.png" width="16" height="16" alt="demoscartodb" title="demoscartodb" />
+        <span class="username">demoscartodb</span>
       </a>
+
+      <a href="#like" class="like js-like">
+        <span class="icon"></span>
+        <span class="counter">0</span>
+      </a>
+
     </div>
 
     
   
-<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/cdb.js" type="text/javascript"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/cdb.js" type="text/javascript"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/public_like.js" type="text/javascript"></script>
 
 <script>
 
@@ -191,17 +205,22 @@
     opt.mobile_layout = true;
 
     cartodb.config.set({
-      cartodb_attributions: "CartoDB <a href='http://cartodb.com/attributions?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Attributions&utm_term=santiagoa' target='_blank'>attribution</a>",
+      cartodb_attributions: "CartoDB <a href='http://cartodb.com/attributions?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Attributions&utm_term=demoscartodb' target='_blank'>attribution</a>",
       cartodb_logo_link: "http://www.cartodb.com?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Logo"
     })
 
-    var loadingTime = cartodb.core.Profiler.metric('cartodb-js.embed.time_full_loaded').start();
+    var loadingTime  = cartodb.core.Profiler.metric('cartodb-js.embed.time_full_loaded').start();
     var visReadyTime = cartodb.core.Profiler.metric('cartodb-js.embed.time_vis_loaded').start();
 
-    cartodb.createVis('map', {"id":"3d0232e0-74a8-11e4-80f5-0e9d821ea90d","version":"0.1.0","title":"bbva_viz_4_1","description":null,"scrollwheel":true,"legends":true,"url":null,"map_provider":"leaflet","bounds":[[25.49100887810795,-100.69244384765625],[25.820290039487425,-99.89181518554688]],"center":"[25.655763077167123, -100.29212951660156]","zoom":11,"updated_at":null,"layers":[{"options":{"id":"37c72a1d-6575-4c57-b08c-3d1c04e3b233","order":0,"visible":true,"type":"Tiled","name":"Dark matter (lite)","className":"default dark_matter_lite_rainbow","base_type":"dark_matter_lite_rainbow","urlTemplate":"http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png","read_only":true,"minZoom":0,"maxZoom":18,"attribution":"\u00a9 <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors \u00a9 <a href=\"http://cartodb.com/attributions#basemaps\">CartoDB</a>","subdomains":"abcd"},"infowindow":null,"tooltip":null,"id":"c3154662-3e21-4906-97cc-b0e44cb62115","order":0,"type":"tiled"},{"id":"f232306e-974e-4b6b-814d-6494d81689b6","type":"torque","order":1,"legend":{"type":"custom","show_title":true,"title":"Peak Consumption In 24 Hours","template":"","items":[{"name":"12 AM - 2 AM","visible":true,"value":"#a50026","sync":true},{"name":"2 AM - 4 AM","visible":true,"value":"#d73027","sync":true},{"name":"4 AM - 6 AM","visible":true,"value":"#f46d43","sync":true},{"name":"6 AM - 8 AM","visible":true,"value":"#fdae61","sync":true},{"name":"8 AM - 10 AM","visible":true,"value":"#fee090","sync":true},{"name":"10 AM - 12 PM","visible":true,"value":"#ffffbf","sync":true},{"name":"12 PM - 2 PM","visible":true,"value":"#e0f3f8","sync":true},{"name":"2 PM - 4 PM","visible":true,"value":"#abd9e9","sync":true},{"name":"4 PM - 6 PM","visible":true,"value":"#74add1","sync":true},{"name":"6 PM - 8 PM","visible":true,"value":"#4575b4","sync":true},{"name":"8 PM - 10 PM","visible":true,"value":"#313695","sync":true},{"name":"10 PM - 12 AM","visible":true,"value":"#081B47","sync":true}]},"options":{"stat_tag":"3d0232e0-74a8-11e4-80f5-0e9d821ea90d","tiler_protocol":"http","tiler_domain":"cartodb.com","tiler_port":"80","sql_api_protocol":"http","sql_api_domain":"cartodb.com","sql_api_endpoint":"/api/v2/sql","sql_api_port":80,"cdn_url":{"http":"api.cartocdn.com","https":"cartocdn.global.ssl.fastly.net"},"layer_name":"consumption_pattern_monday_test","dynamic_cdn":false,"visible":true,"table_name":"consumption_pattern_monday_test","user_name":"santiagoa","tile_style":"/** torque visualization */\n\nMap {\n-torque-frame-count:0.5;\n-torque-animation-duration:30;\n-torque-time-attribute:\"cartodb_id\";\n-torque-aggregation-function:\"CDB_Math_Mode(hour)\";\n-torque-resolution:16;\n-torque-data-aggregation:linear;\n}\n\n#consumption_pattern_monday_test{\n  comp-op: lighter;\n  marker-fill-opacity: 0.8;\n  marker-line-color: #000000;\n  marker-line-width: 0.2;\n  marker-line-opacity: 1;\n  marker-type: rectangle;\n  marker-width: 6;\n  marker-fill: #3E7BB6;\n}\n\n\n#consumption_pattern_monday_test[value>2] { marker-fill: #a50026; }\n#consumption_pattern_monday_test[value>4] { marker-fill: #d73027; }\n#consumption_pattern_monday_test[value>6] { marker-fill: #f46d43; }\n#consumption_pattern_monday_test[value>8] { marker-fill:#fdae61; }\n#consumption_pattern_monday_test[value>10] { marker-fill:#fee090; }\n#consumption_pattern_monday_test[value>12] { marker-fill:#ffffbf; }\n#consumption_pattern_monday_test[value>14] { marker-fill:#e0f3f8; }\n#consumption_pattern_monday_test[value>16] { marker-fill:#abd9e9; }\n#consumption_pattern_monday_test[value>18] { marker-fill: #74add1; }\n#consumption_pattern_monday_test[value>20] { marker-fill: #4575b4; }\n#consumption_pattern_monday_test[value>22] { marker-fill: #313695; }\n#consumption_pattern_monday_test[value>23] { marker-fill: #081B47; }\n","named_map":{"name":"tpl_3d0232e0_74a8_11e4_80f5_0e9d821ea90d","layer_index":0,"params":{}}}}],"overlays":[{"type":"search","order":3,"options":{"display":true,"x":60,"y":20},"template":""},{"type":"logo","order":9,"options":{"display":true,"x":10,"y":40},"template":""},{"type":"loader","order":8,"options":{"display":true,"x":20,"y":150},"template":"<div class=\"loader\" original-title=\"\"></div>"},{"type":"zoom","order":6,"options":{"display":true,"x":20,"y":20},"template":"<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"},{"type":"share","order":2,"options":{"display":true,"x":20,"y":20},"template":""},{"type":"text","order":1,"options":{"x":79,"y":19,"device":"desktop","display":true,"style":{"z-index":4,"color":"#ffffff","text-align":"left","font-size":20,"font-family-name":"Helvetica","box-padding":10,"box-color":"#000000","box-opacity":0.7,"box-width":420},"extra":{"landscapeDirection":"left","pTop":0,"pLeft":0,"portraitDirection":"top","text":"**<span style=\"font-size: 40px;\">Average Monday in Monterrey Mexico**</span>","rendered_text":"<strong><span style=&quot;font-size: 40px;&quot;>Average Monday in Monterrey Mexico</strong></span>","default_position":false,"landscape_dominant_side":"left","portrait_dominant_side":"top","top_percentage":9.991423670668954,"left_percentage":24.78559176672384,"right_position":667,"bottom_position":318,"right":1087,"bottom":513,"width":180,"height":195}},"template":null}]}, opt, function(vis) {
+    cartodb.createVis('map', {"id":"a9d47198-8471-11e4-bd49-0e018d66dc29","version":"0.1.0","title":"bbva_viz_4_1","likes":0,"description":null,"scrollwheel":true,"legends":true,"url":null,"map_provider":"leaflet","bounds":[[25.562884447344448,-100.64472198486328],[25.80638210860858,-100.02571105957031]],"center":"[25.68469548884868, -100.3352165222168]","zoom":12,"updated_at":null,"layers":[{"options":{"id":"b4fb4a7f-4795-432a-9583-72d8b2a77b27","order":0,"visible":true,"type":"Tiled","name":"Dark matter","className":"default dark_matter_rainbow","base_type":"dark_matter_rainbow","urlTemplate":"http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png","read_only":true,"minZoom":0,"maxZoom":18,"attribution":"\u00a9 <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors \u00a9 <a href=\"http://cartodb.com/attributions#basemaps\">CartoDB</a>","subdomains":"abcd"},"infowindow":null,"tooltip":null,"id":"b4fb4a7f-4795-432a-9583-72d8b2a77b27","order":0,"type":"tiled"},{"id":"87e5f0a5-0b7b-4aa8-898e-8f82d44bf2dd","type":"torque","order":1,"legend":{"type":"custom","show_title":true,"title":"Peak consumption in 24 hours","template":"","items":[{"name":"12 am - 2 am","visible":true,"value":"#a50026","sync":true},{"name":"2 am - 4 am","visible":true,"value":"#d73027","sync":true},{"name":"4 am - 6 am","visible":true,"value":"#f46d43","sync":true},{"name":"6 am - 8 am","visible":true,"value":"#fdae61","sync":true},{"name":"8 am - 10 am","visible":true,"value":"#fee090","sync":true},{"name":"10 am - 12 pm","visible":true,"value":"#ffffbf","sync":true},{"name":"12 pm - 2 pm","visible":true,"value":"#e0f3f8","sync":true},{"name":"2 pm - 4 pm","visible":true,"value":"#abd9e9","sync":true},{"name":"4 pm - 6 pm","visible":true,"value":"#74add1","sync":true},{"name":"6 pm - 8 pm","visible":true,"value":"#4575b4","sync":true},{"name":"8 pm - 10 pm","visible":true,"value":"#313695","sync":true},{"name":"10 pm - 12 pm","visible":true,"value":"#081b47","sync":true}]},"options":{"stat_tag":"a9d47198-8471-11e4-bd49-0e018d66dc29","tiler_protocol":"http","tiler_domain":"cartodb.com","tiler_port":"80","sql_api_protocol":"http","sql_api_domain":"cartodb.com","sql_api_endpoint":"/api/v2/sql","sql_api_port":80,"cdn_url":{"http":"api.cartocdn.com","https":"cartocdn.global.ssl.fastly.net"},"layer_name":"consumption_pattern_monday_test","dynamic_cdn":false,"visible":true,"table_name":"consumption_pattern_monday_test","user_name":"demoscartodb","tile_style":"/** torque visualization */\n\nMap {\n-torque-frame-count:0.5;\n-torque-animation-duration:30;\n-torque-time-attribute:\"cartodb_id\";\n-torque-aggregation-function:\"CDB_Math_Mode(hour)\";\n-torque-resolution:16;\n-torque-data-aggregation:linear;\n}\n\n#consumption_pattern_monday_test{\n  comp-op: lighter;\n  marker-fill-opacity: 0.8;\n  marker-line-color: #000000;\n  marker-line-width: 0.2;\n  marker-line-opacity: 1;\n  marker-type: rectangle;\n  marker-width: 6;\n  marker-fill: #3E7BB6;\n}\n\n\n#consumption_pattern_monday_test[value>2] { marker-fill: #a50026; }\n#consumption_pattern_monday_test[value>4] { marker-fill: #d73027; }\n#consumption_pattern_monday_test[value>6] { marker-fill: #f46d43; }\n#consumption_pattern_monday_test[value>8] { marker-fill:#fdae61; }\n#consumption_pattern_monday_test[value>10] { marker-fill:#fee090; }\n#consumption_pattern_monday_test[value>12] { marker-fill:#ffffbf; }\n#consumption_pattern_monday_test[value>14] { marker-fill:#e0f3f8; }\n#consumption_pattern_monday_test[value>16] { marker-fill:#abd9e9; }\n#consumption_pattern_monday_test[value>18] { marker-fill: #74add1; }\n#consumption_pattern_monday_test[value>20] { marker-fill: #4575b4; }\n#consumption_pattern_monday_test[value>22] { marker-fill: #313695; }\n#consumption_pattern_monday_test[value>23] { marker-fill: #081B47; }\n","named_map":{"name":"tpl_a9d47198_8471_11e4_bd49_0e018d66dc29","layer_index":0,"params":{}}}}],"overlays":[{"type":"text","order":1,"options":{"x":70,"y":10,"device":"desktop","display":true,"style":{"z-index":4,"color":"#ffffff","text-align":"left","font-size":20,"font-family-name":"Helvetica","box-padding":10,"box-color":"#000000","box-opacity":0.7,"box-width":500},"extra":{"landscapeDirection":"left","pTop":0,"pLeft":0,"portraitDirection":"top","text":"Peak payments in Monterrey","rendered_text":"Peak payments in Monterrey","default_position":false,"landscape_dominant_side":"left","portrait_dominant_side":"top","top_percentage":1.7748197448696619,"left_percentage":11.5363283416528,"right_position":1457,"bottom_position":733,"right":1733,"bottom":777,"width":276,"height":44}},"template":null},{"type":"fullscreen","order":7,"options":{"x":20,"y":140,"display":true},"template":null},{"type":"search","order":3,"options":{"display":true,"x":60,"y":20},"template":""},{"type":"zoom","order":6,"options":{"display":true,"x":20,"y":20},"template":"<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"},{"type":"loader","order":8,"options":{"display":true,"x":20,"y":150},"template":"<div class=\"loader\" original-title=\"\"></div>"},{"type":"logo","order":9,"options":{"display":true,"x":10,"y":40},"template":""}]}, opt, function(vis) {
       visReadyTime.end();
       vis.on('load', function() {
         loadingTime.end();
+      });
+
+      var like = new cdb.open.LikeView({ 
+        el: $(".js-like"),
+        model: new cdb.open.Like({ vis_id: "a9d47198-8471-11e4-bd49-0e018d66dc29" })
       });
 
       window.vis = vis;
@@ -217,7 +236,7 @@
 
   //<!-- load stats -->
     if (location.protocol.indexOf('https') === -1) {
-      jQuery.getScript('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/statsc.js', function(ready) {
+      jQuery.getScript('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/statsc.js', function(ready) {
         statsc.connect('http://s.cartodb.net:8127/');
         cartodb.core.Profiler.backend(function () {
           statsc.send.apply(statsc, arguments);

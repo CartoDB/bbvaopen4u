@@ -4,26 +4,26 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/favicons/favicon.ico?1411985985" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <title>bbva viz 7 2 | CartoDB</title>
-    <meta name="description" content="bbva viz 7 2">
+    <link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/favicons/favicon.ico?1411985985" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <title>Food payments by gender Guadalajara | CartoDB</title>
+    <meta name="description" content="Food payments by gender Guadalajara">
     <meta name="keywords" content="Map,cartodb,bbva,viz,7,2">
     <meta name="author" content="CartoDB">
     <meta name="DC.title" content=" | CartoDB">
     
-    <meta property="og:title" content="bbva viz 7 2 | CartoDB"/>
-    <meta property="og:description" content="bbva viz 7 2"/>
+    <meta property="og:title" content="Food payments by gender Guadalajara | CartoDB"/>
+    <meta property="og:description" content="Food payments by gender Guadalajara"/>
     <meta property="og:type" content="Visualization"/>
-    <meta property="og:url" content="/u/jorgearevalo/viz/b337c576-74a1-11e4-b82c-0e9d821ea90d/embed_map" />
-    <meta property="og:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/cartofante_blue.png"/>
+    <meta property="og:url" content="/u/demoscartodb/viz/129323a0-8463-11e4-b2a2-0e0c41326911/embed_map" />
+    <meta property="og:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/cartofante_blue.png"/>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@cartodb">
     <meta name="twitter:creator" content="@cartodb">
-    <meta name="twitter:title" content="bbva viz 7 2 | CartoDB">
-    <meta name="twitter:description" content="bbva viz 7 2">
-    <meta name="twitter:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/cartofante_blue.png">
-    <meta name="twitter:url" content="/u/jorgearevalo/viz/b337c576-74a1-11e4-b82c-0e9d821ea90d/embed_map" />
+    <meta name="twitter:title" content="Food payments by gender Guadalajara | CartoDB">
+    <meta name="twitter:description" content="Food payments by gender Guadalajara">
+    <meta name="twitter:image" content="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/cartofante_blue.png">
+    <meta name="twitter:url" content="/u/demoscartodb/viz/129323a0-8463-11e4-b2a2-0e0c41326911/embed_map" />
     
     
   <style type="text/css">
@@ -34,6 +34,14 @@
   .cartodb-text a.user { text-decoration:none }
   .cartodb-text img {display:inline-block; *display:inline; vertical-align:middle; border-radius:16px; -webkit-border-radius:16px; -moz-border-radius:16px; zoom:1; text-decoration:none }
   .cartodb-text span.username { text-decoration:underline }
+  /* likes */
+  .cartodb-text .like { float: right; display:inline-block; *display:inline; vertical-align:middle; zoom:1; text-decoration: none; color: #666; }
+  .cartodb-text .like .icon { display:inline-block; *display:inline; vertical-align:middle; zoom:1; position:relative; top: -1px; width: 14px; height: 14px; background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/heart.png'); background-size: 14px 14px; -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7);  }
+  .cartodb-text .like.is-highlighted .icon { background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/heart_highlighted.png'); background-size: 14px 14px; -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); }
+  .cartodb-text .like .icon.is-animated { -ms-animation-duration: 400ms; -webkit-animation-duration: 400ms; animation-duration: 400ms; -webkit-animation-fill-mode: both; -ms-animation-fill-mode: both; animation-fill-mode: both; animation-timing-function: ease-in; -webkit-animation-timing-function: ease-in; } 
+  @-webkit-keyframes pulse { 0% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } 25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(.5); -ms-transform: scale(.5); transform: scale(.5); } 75% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 100% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } }
+  @keyframes pulse { 0% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } 25% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 50% { -webkit-transform: scale(.5); -ms-transform: scale(.5); transform: scale(.5); } 75% { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); } 100% { -webkit-transform: scale(.7); -ms-transform: scale(.7); transform: scale(.7); } }
+  .cartodb-text .like .icon.is-pulsating { -webkit-animation-name: pulse; -ms-animation-name: pulse; animation-name: pulse; }
 
   /* not supported dialog */ 
   #not_supported_dialog {position:absolute; width:356px; height:213px; top:50%; left:50%; margin-top:-107px; margin-left:-178px; padding:0; background-color:#FFF; text-align:center; font-family:'Helvetica', Arial; color:#666666; z-index:10000;}
@@ -43,17 +51,17 @@
   #not_supported_dialog ul li {float:left; margin:0; padding:0; border-right:1px solid #D9D9D9;}
   #not_supported_dialog ul li a {display:block; width:118px; height:74px; background-repeat:no-repeat; background-position:center center; font-size:0; line-height:0; text-indent:-9999px;}
   #not_supported_dialog ul li.last {border:none;}
-  #not_supported_dialog a.safari {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/safari.png');}
-  #not_supported_dialog a.chrome {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/chrome.png');}
-  #not_supported_dialog a.firefox {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/images/layout/firefox.png');}
+  #not_supported_dialog a.safari {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/safari.png');}
+  #not_supported_dialog a.chrome {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/chrome.png');}
+  #not_supported_dialog a.firefox {background-image:url('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/images/layout/firefox.png');}
+
+      div.cartodb-timeslider {display: none !important;}
 
 
   :-webkit-full-screen .cartodb-map-wrapper { height: 100%!important; }
   :-moz-full-screen .cartodb-map-wrapper { height: 100%!important; }
   :-ms-fullscreen .cartodb-map-wrapper { height: 100%!important; }
   :fullscreen .cartodb-map-wrapper { height: 100%!important; }
-      
-      div.cartodb-timeslider {display: none !important;}
 
     /* Styles showing up new cartodb text */
       .cartodb-map-wrapper {bottom:30px!important;}
@@ -61,12 +69,12 @@
 
 </style>
 
-<link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/stylesheets/cartodb.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/stylesheets/cartodb.css" media="screen" rel="stylesheet" type="text/css" />
 
 
 
     <!--[if lt IE 9]>
-      <script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/modernizr.js" type="text/javascript"></script>
+      <script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/modernizr.js" type="text/javascript"></script>
     <![endif]-->
   </head>
 
@@ -88,15 +96,22 @@
 
     <div class="cartodb-text">
       Map created by
-      <a class="user" href="https://team.cartodb.com/u/jorgearevalo?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=jorgearevalo" target="_blank">
-          <img src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/unversioned/images/avatars/avatar_heart_red.png" width="16" height="16" alt="jorgearevalo" title="jorgearevalo" />
-        <span class="username">jorgearevalo</span>
+      <a class="user" href="https://bbvaopen4u.cartodb.com/u/demoscartodb?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=demoscartodb" target="_blank">
+          <img src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/unversioned/images/avatars/avatar_star_red.png" width="16" height="16" alt="demoscartodb" title="demoscartodb" />
+        <span class="username">demoscartodb</span>
       </a>
+
+      <a href="#like" class="like js-like">
+        <span class="icon"></span>
+        <span class="counter">0</span>
+      </a>
+
     </div>
 
     
   
-<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/cdb.js" type="text/javascript"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/cdb.js" type="text/javascript"></script>
+<script src="//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/public_like.js" type="text/javascript"></script>
 
 <script>
 
@@ -191,17 +206,22 @@
     opt.mobile_layout = true;
 
     cartodb.config.set({
-      cartodb_attributions: "CartoDB <a href='http://cartodb.com/attributions?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Attributions&utm_term=jorgearevalo' target='_blank'>attribution</a>",
+      cartodb_attributions: "CartoDB <a href='http://cartodb.com/attributions?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Attributions&utm_term=demoscartodb' target='_blank'>attribution</a>",
       cartodb_logo_link: "http://www.cartodb.com?utm_source=Footer_Link&utm_medium=referral&utm_campaign=Embed_v1&utm_content=Logo"
     })
 
-    var loadingTime = cartodb.core.Profiler.metric('cartodb-js.embed.time_full_loaded').start();
+    var loadingTime  = cartodb.core.Profiler.metric('cartodb-js.embed.time_full_loaded').start();
     var visReadyTime = cartodb.core.Profiler.metric('cartodb-js.embed.time_vis_loaded').start();
 
-    cartodb.createVis('map', {"id":"b337c576-74a1-11e4-b82c-0e9d821ea90d","version":"0.1.0","title":"bbva_viz_7_2","description":null,"scrollwheel":true,"legends":true,"url":null,"map_provider":"leaflet","bounds":[[20.582010172062677,-103.54476928710938],[20.75290343853452,-103.14445495605469]],"center":"[20.66748083962362, -103.34461212158202]","zoom":12,"updated_at":null,"layers":[{"options":{"id":"322d39b6-28ce-4fe2-9da0-526910479d3e","order":0,"visible":true,"type":"Tiled","name":"Nokia Reduced Day","className":"default nokia_reduced_day","base_type":"nokia_reduced_day","urlTemplate":"https://{s}.maps.nlp.nokia.com/maptile/2.1/maptile/newest/reduced.day/{z}/{x}/{y}/256/png8?lg=eng&token=A7tBPacePg9Mj_zghvKt9Q&app_id=KuYppsdXZznpffJsKT24","read_only":true,"minZoom":0,"maxZoom":21,"attribution":"\u00a92012 Nokia <a href='http://here.net/services/terms' target='_blank'>Terms of use</a>","subdomains":"1234"},"infowindow":null,"tooltip":null,"id":"f2ba4e31-48b9-43e4-bf93-c491de8b6ade","order":0,"type":"tiled"},{"id":"188b8ae6-dc81-4330-9217-9210d12562c0","type":"torque","order":1,"legend":{"type":"custom","show_title":true,"title":"","template":"","items":[{"name":"Male payment","visible":true,"value":"#3E7BB6"},{"name":"Female payment","visible":true,"value":"#ff0087"}]},"options":{"stat_tag":"b337c576-74a1-11e4-b82c-0e9d821ea90d","tiler_protocol":"http","tiler_domain":"cartodb.com","tiler_port":"80","sql_api_protocol":"http","sql_api_domain":"cartodb.com","sql_api_endpoint":"/api/v2/sql","sql_api_port":80,"cdn_url":{"http":"api.cartocdn.com","https":"cartocdn.global.ssl.fastly.net"},"layer_name":"bbva_food_by_age_and_gender","dynamic_cdn":false,"visible":true,"table_name":"bbva_food_by_age_and_gender","user_name":"jorgearevalo","tile_style":"/** torque_cat visualization */\n\nMap {\n-torque-frame-count:512;\n-torque-animation-duration:30;\n-torque-time-attribute:\"cartodb_id\";\n-torque-aggregation-function:\"CDB_Math_Mode(torque_category)\";\n-torque-resolution:2;\n-torque-data-aggregation:linear;\n}\n\n#bbva_food_by_age_and_gender{\n  comp-op: source-over;\n  marker-fill-opacity: 0.9;\n  marker-line-color: #FFF;\n  marker-line-width: 0;\n  marker-line-opacity: 1;\n  marker-type: ellipse;\n  marker-width: 6;\n  marker-fill: #FF9900;\n}\n#bbva_food_by_age_and_gender[frame-offset=1] {\n marker-width:8;\n marker-fill-opacity:0.45; \n}\n#bbva_food_by_age_and_gender[frame-offset=2] {\n marker-width:10;\n marker-fill-opacity:0.225; \n}\n#bbva_food_by_age_and_gender[value=1] {\n   marker-fill: #3E7BB6;\n}\n#bbva_food_by_age_and_gender[value=2] {\n   marker-fill: #ff0087;\n}","named_map":{"name":"tpl_b337c576_74a1_11e4_b82c_0e9d821ea90d","layer_index":0,"params":{}}}}],"overlays":[{"type":"loader","order":8,"options":{"display":true,"x":20,"y":150},"template":"<div class=\"loader\" original-title=\"\"></div>"},{"type":"logo","order":9,"options":{"display":true,"x":10,"y":40},"template":""},{"type":"zoom","order":6,"options":{"display":true,"x":20,"y":20},"template":"<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"},{"type":"fullscreen","order":7,"options":{"x":20,"y":160,"display":true},"template":null},{"type":"search","order":3,"options":{"x":20,"y":40,"display":true},"template":null},{"type":"text","order":1,"options":{"x":71.5,"y":19,"device":"desktop","display":true,"style":{"z-index":4,"color":"#ffffff","text-align":"left","font-size":"20","font-family-name":"Helvetica","box-padding":10,"box-color":"#000000","box-opacity":0.7,"box-width":300},"extra":{"pLeft":"50","pTop":"50","landscapeDirection":"left","portraitDirection":"top","text":"Patterns in Guadalajara","rendered_text":"Patterns in Guadalajara","default_position":false,"landscape_dominant_side":"left","portrait_dominant_side":"top","top_percentage":5.874785591766724,"left_percentage":18.996569468267584,"right_position":794.5,"bottom_position":414,"right":1094.5,"bottom":513,"width":229,"height":99}},"template":null}]}, opt, function(vis) {
+    cartodb.createVis('map', {"id":"129323a0-8463-11e4-b2a2-0e0c41326911","version":"0.1.0","title":"bbva_viz_7_2","likes":0,"description":null,"scrollwheel":true,"legends":true,"url":null,"map_provider":"leaflet","bounds":[[20.547294112801367,-103.64501953125],[20.800089982572025,-103.02600860595703]],"center":"[20.673744657359045, -103.33551406860352]","zoom":12,"updated_at":null,"layers":[{"options":{"visible":true,"type":"Tiled","urlTemplate":"http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png","subdomains":"1234","name":"Positron","className":"positron_rainbow","attribution":"\u00a9 <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors \u00a9 <a href=\"http://cartodb.com/attributions#basemaps\">CartoDB</a>"},"infowindow":null,"tooltip":null,"id":"724d7b34-810a-4b90-b781-2d525fea18d7","order":0,"type":"tiled"},{"id":"f5f04dc1-3997-4dc4-8bd9-ee69154a94d6","type":"torque","order":1,"legend":{"type":"custom","show_title":false,"title":"","template":"","items":[{"name":"Male payment","visible":true,"value":"#3e7bb6"},{"name":"Female payment","visible":true,"value":"#ff0087"}]},"options":{"stat_tag":"129323a0-8463-11e4-b2a2-0e0c41326911","tiler_protocol":"http","tiler_domain":"cartodb.com","tiler_port":"80","sql_api_protocol":"http","sql_api_domain":"cartodb.com","sql_api_endpoint":"/api/v2/sql","sql_api_port":80,"cdn_url":{"http":"api.cartocdn.com","https":"cartocdn.global.ssl.fastly.net"},"layer_name":"bbva_food_by_age_and_gender","dynamic_cdn":false,"visible":true,"table_name":"bbva_food_by_age_and_gender","user_name":"demoscartodb","tile_style":"/** torque_cat visualization */\n\nMap {\n-torque-frame-count:512;\n-torque-animation-duration:30;\n-torque-time-attribute:\"cartodb_id\";\n-torque-aggregation-function:\"CDB_Math_Mode(torque_category)\";\n-torque-resolution:2;\n-torque-data-aggregation:linear;\n}\n\n#bbva_food_by_age_and_gender{\n  comp-op: source-over;\n  marker-fill-opacity: 0.9;\n  marker-line-color: #FFF;\n  marker-line-width: 0;\n  marker-line-opacity: 1;\n  marker-type: ellipse;\n  marker-width: 6;\n  marker-fill: #FF9900;\n}\n#bbva_food_by_age_and_gender[frame-offset=1] {\n marker-width:8;\n marker-fill-opacity:0.45; \n}\n#bbva_food_by_age_and_gender[frame-offset=2] {\n marker-width:10;\n marker-fill-opacity:0.225; \n}\n#bbva_food_by_age_and_gender[value=1] {\n   marker-fill: #3E7BB6;\n}\n#bbva_food_by_age_and_gender[value=2] {\n   marker-fill: #ff0087;\n}","named_map":{"name":"tpl_129323a0_8463_11e4_b2a2_0e0c41326911","layer_index":0,"params":{}}}}],"overlays":[{"type":"text","order":1,"options":{"x":55,"y":0,"device":"desktop","display":true,"style":{"z-index":4,"color":"#ffffff","text-align":"left","font-size":16,"font-family-name":"Helvetica","box-padding":10,"box-color":"#000000","box-opacity":0.7,"box-width":330},"extra":{"landscapeDirection":"left","pTop":0,"pLeft":0,"portraitDirection":"top","text":"Food payments by gender - Guadalajara<br>","rendered_text":"Food payments by gender - Guadalajara<br>","default_position":false,"landscape_dominant_side":"left","portrait_dominant_side":"top","top_percentage":1.6441821247892074,"left_percentage":17.66441821247892,"right_position":822,"bottom_position":457,"right":1131,"bottom":496,"width":309,"height":39}},"template":null},{"type":"fullscreen","order":7,"options":{"x":20,"y":160,"display":true},"template":null},{"type":"search","order":3,"options":{"display":true,"x":60,"y":20},"template":""},{"type":"zoom","order":6,"options":{"display":true,"x":20,"y":20},"template":"<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"},{"type":"loader","order":8,"options":{"display":true,"x":20,"y":150},"template":"<div class=\"loader\" original-title=\"\"></div>"},{"type":"logo","order":9,"options":{"display":true,"x":10,"y":40},"template":""}]}, opt, function(vis) {
       visReadyTime.end();
       vis.on('load', function() {
         loadingTime.end();
+      });
+
+      var like = new cdb.open.LikeView({ 
+        el: $(".js-like"),
+        model: new cdb.open.Like({ vis_id: "129323a0-8463-11e4-b2a2-0e0c41326911" })
       });
 
       window.vis = vis;
@@ -217,7 +237,7 @@
 
   //<!-- load stats -->
     if (location.protocol.indexOf('https') === -1) {
-      jQuery.getScript('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/2.16.00/javascripts/statsc.js', function(ready) {
+      jQuery.getScript('//cartodb-libs.global.ssl.fastly.net/cartodbui/assets/3.00.00/javascripts/statsc.js', function(ready) {
         statsc.connect('http://s.cartodb.net:8127/');
         cartodb.core.Profiler.backend(function () {
           statsc.send.apply(statsc, arguments);
